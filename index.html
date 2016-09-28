@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+	<meta charset="UTF-8" />
+	<title>首页</title>
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/dropLoad.js"></script>
+	<style>
+		.topLoad,.botLoad{line-height: 50px;text-align: center;color: #fff}
+		.topLoadBox,.botLoadBox{overflow: hidden;height:0;background: #000;}
+	</style>
+</head>
+<body>
+	<div class="header">
+    <h1>就当我是新闻页吧</h1>
+</div>
+<div class="content">
+    <div class="lists">
+        <a class="item" href="#">
+            <img src="http://d6.yihaodianimg.com/N02/M0B/81/5A/CgQCsVMhX_mAAvXsAAJDE3K2zh485900_80x80.jpg" alt="">
+            <h3>1文字描述文字描述</h3>
+            <span class="date">2014-14-14</span>
+        </a>
+        <a class="item" href="#">
+            <img src="http://d6.yihaodianimg.com/N02/M0B/81/5A/CgQCsVMhX_mAAvXsAAJDE3K2zh485900_80x80.jpg" alt="">
+            <h3>2文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述</h3>
+            <span class="date">2014-14-14</span>
+        </a>
+        <a class="item" href="#">
+            <img src="http://d6.yihaodianimg.com/N02/M0B/81/5A/CgQCsVMhX_mAAvXsAAJDE3K2zh485900_80x80.jpg" alt="">
+            <h3>3文字描述文字描述文字描述文字描述文字描述</h3>
+            <span class="date">2014-14-14</span>
+        </a>
+        <a class="item" href="#">
+            <img src="http://d6.yihaodianimg.com/N02/M0B/81/5A/CgQCsVMhX_mAAvXsAAJDE3K2zh485900_80x80.jpg" alt="">
+            <h3>4文字描述文字描述文字描述文字描述文字描述</h3>
+            <span class="date">2014-14-14</span>
+        </a>
+        <a class="item" href="#">
+            <img src="http://d6.yihaodianimg.com/N02/M0B/81/5A/CgQCsVMhX_mAAvXsAAJDE3K2zh485900_80x80.jpg" alt="">
+            <h3>5文字描述文字描述文字描述文字描述文字描述</h3>
+            <span class="date">2014-14-14</span>
+        </a>
+        <a class="item" href="#">
+            <img src="http://d6.yihaodianimg.com/N02/M0B/81/5A/CgQCsVMhX_mAAvXsAAJDE3K2zh485900_80x80.jpg" alt="">
+            <h3>6文字描述文字描述文字描述文字描述文字描述</h3>
+            <span class="date">2014-14-14</span>
+        </a>
+        <a class="item" href="#">
+            <img src="http://d6.yihaodianimg.com/N02/M0B/81/5A/CgQCsVMhX_mAAvXsAAJDE3K2zh485900_80x80.jpg" alt="">
+            <h3>7文字描述文字描述文字描述文字描述文字描述</h3>
+            <span class="date">2014-14-14</span>
+        </a>
+        <a class="item" href="#">
+            <img src="http://d6.yihaodianimg.com/N02/M0B/81/5A/CgQCsVMhX_mAAvXsAAJDE3K2zh485900_80x80.jpg" alt="">
+            <h3>8文字描述文字描述文字描述文字描述文字描述</h3>
+            <span class="date">2014-14-14</span>
+        </a>
+        <a class="item" href="#">
+            <img src="http://d6.yihaodianimg.com/N02/M0B/81/5A/CgQCsVMhX_mAAvXsAAJDE3K2zh485900_80x80.jpg" alt="">
+            <h3>9文字描述文字描述文字描述文字描述文字描述</h3>
+            <span class="date">2014-14-14</span>
+        </a>
+        <a class="item" href="#">
+            <img src="http://d6.yihaodianimg.com/N02/M0B/81/5A/CgQCsVMhX_mAAvXsAAJDE3K2zh485900_80x80.jpg" alt="">
+            <h3>10文字描述文字描述文字描述文字描述文字描述</h3>
+            <span class="date">2014-14-14</span>
+        </a>
+        <a class="item" href="#">
+            <img src="http://d6.yihaodianimg.com/N02/M0B/81/5A/CgQCsVMhX_mAAvXsAAJDE3K2zh485900_80x80.jpg" alt="">
+            <h3>11文字描述文字描述文字描述文字描述文字描述</h3>
+            <span class="date">2014-14-14</span>
+        </a>
+        <a class="item" href="#">
+            <img src="http://d6.yihaodianimg.com/N02/M0B/81/5A/CgQCsVMhX_mAAvXsAAJDE3K2zh485900_80x80.jpg" alt="">
+            <h3>12文字描述文字描述文字描述文字描述文字描述</h3>
+            <span class="date">2014-14-14</span>
+        </a>
+    </div>
+</div>
+
+<div class="footfix"></div>
+<div class="footer">
+    <a href="#1" class="item">测试菜单</a>
+    <a href="#2" class="item">只做展示</a>
+    <a href="#3" class="item">无功能</a>
+    <a href="#4" class="item">不用点</a>
+</div>
+</body>
+	<script>
+		$(function(){
+			var myLoad=$(".content").dropLoad({
+                ajaxBotfn:function(me){
+                    var str="";
+                    $.ajax({
+                        type:"GET",
+                    dataType:"json",
+                    url:"json/more.json",
+                    success:function(data){
+                        if(data){
+                            $.each(data.lists,function(i,el){
+                                str+='<a class="item opacity" href="'+data.lists[i].link+'">'
+                                        +'<img src="'+data.lists[i].pic+'" alt="">'
+                                        +'<h3>'+data.lists[i].title+'</h3>'
+                                        +'<span class="date">'+data.lists[i].date+'</span>'
+                                    +'</a>'; 
+                            })
+                            $(".lists").append(str)
+                            me.removeLoad();
+                        }
+                    }
+                    })
+                },
+                ajaxTopfn:function(me){
+                    var str="";
+                    $.ajax({
+                        type:"GET",
+                        dataType:"json",
+                        url:"json/update.json",
+                        success:function(data){
+                            if(data){
+                                $.each(data.lists,function(i,el){
+                                    str+='<a class="item opacity" href="'+data.lists[i].link+'">'
+                                        +'<img src="'+data.lists[i].pic+'" alt="">'
+                                        +'<h3>'+data.lists[i].title+'</h3>'
+                                        +'<span class="date">'+data.lists[i].date+'</span>'
+                                    +'</a>'; 
+                            })
+                              $(".lists").html(str)
+                                me.removeLoad();  
+                            }
+                           
+                            
+                        }
+                    })
+                }
+            })
+		})
+	</script>
+</html>
